@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, p {
+	line-height: 24px;
+	font-size: 16px;
+}
+
+nav {
+	background-color:#2d4452;
+}
+
+.stickynav {
+	width:100%;
+	height: auto;
+	position: fixed;
+	z-index: 2;
+	display: block;
+}
+
+
+.searchbox {
+	width:100%;
+	height: auto;
+	display: none;
+	position: fixed;
+	top:64px;
+	left:0px;
+	z-index: 2;
+}
+
+#sidenav-overlay {
+	z-index: 0;
+}
+
+.ddmenu {
+	width:auto;
+	padding:10px;
+	background-color:rgba(45,68,82,.8);
+	position: absolute;
+	visibility: hidden;
+	z-index: 3;
+	opacity: 0;
+	transition: all .3s ease-out;
+}
+
+
+.dropmenu:hover .ddmenu {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	transition: all .3s ease-out;
+}
+
+.dropmenu:hover a {
+	color:#669900;
+}
+
+.ddlist a {
+	width: auto;
+    display: block;
+    height: auto;
+	color:#fff !important;
+}
+
+.ddlist a:hover {
+	background:none;
+}
+
+.section {
+	width:100%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+
+#intro {
+	margin-top:64px;
+	background-color:#f2f2f2;
+}
+
+#section03 {
+	background:#f2f2f2;
+}
+
+.input[type=text] {
+	background:none !important;
+}
+
+.default_input {
+	width:300px !important;
+	background-color: #ffffff;
+	padding: 5px 20px;
+}
+
+.footer_link {
+	display: inline-block;
+	text-align: right;
+	width:100%;
+	margin-top: 20px;
+}
+
+.footer_link a {
+	margin-left:18px;
+}
+
+.page-footer {
+	background:#2d4452;
+}
+
+.ddmobile {
+	padding-left:32px !important;
+}
+
+.copyr {
+		text-align: left;
+	}
+.footlink {
+	text-align: right;
+}
+
+
+@media only screen and (max-width: 412px) {
+	.footer-copyright {
+		text-align: center;
+	}
+	
+	.copyr, .footlink {
+		text-align: center;
+	}
+	
+	.default_input {
+	width:250px !important;
+}
+}
